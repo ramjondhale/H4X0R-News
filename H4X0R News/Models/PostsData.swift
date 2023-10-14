@@ -8,7 +8,7 @@
 import Foundation
 
 struct Results: Decodable {
-    let hints: [Post]
+    let hits: [Post]
 }
 
 struct Post: Decodable, Identifiable {
@@ -17,6 +17,6 @@ struct Post: Decodable, Identifiable {
     }
     let objectID: String
     let title: String
-    let url: String
+    let url: String?
     let points: Int
 }
